@@ -1,7 +1,7 @@
 {
   "name": "plugin-creator",
   "version": "0.1.0",
-  "description": "Plugin-authoring workflow — /plugin-plan, /plugin-build, /plugin-review. Prose-native review roster, scenario-driven evals, and the five-home artifact system for building Claude Code plugins with the rigour of a code workflow.",
+  "description": "Create Claude Code plugins for any workflow and keep improving them — /plugin-plan, /plugin-build, /plugin-review. Each plugin gets its own standard for what good looks like, a rubric to measure against, and a test suite that grows with every fix.",
   "author": {
     "name": "LikeAHuman.ai",
     "email": "academy@likeahuman.ai",
