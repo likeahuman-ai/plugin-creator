@@ -1,0 +1,14 @@
+{
+  "name": "plugin-creator",
+  "version": "0.1.0",
+  "description": "Plugin-authoring workflow — /plugin-plan, /plugin-build, /plugin-review. Prose-native review roster, scenario-driven evals, and the five-home artifact system for building Claude Code plugins with the rigour of a code workflow.",
+  "author": {
+    "name": "LikeAHuman.ai",
+    "email": "academy@likeahuman.ai",
+    "url": "https://likeahuman.ai"
+  },
+  "homepage": "https://github.com/likeahuman-ai/plugin-creator",
+  "repository": "https://github.com/likeahuman-ai/plugin-creator",
+  "license": "MIT",
+  "skills": "./skills/"
+}
