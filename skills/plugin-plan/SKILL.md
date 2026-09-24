@@ -35,7 +35,8 @@ Boundaries that hold for the whole phase:
 - **One commit, no push.** Plain git: the single `docs(plan)` commit (1.3.3) follows
   acceptance autonomously — never gate it; publication belongs to Build's close.
 
-The formats this phase fills — `sprint-format`, `pillar-format`, `scenario-format` — live at
+The formats this phase fills — `sprint-format`, `pillar-format`, `scenario-format`,
+`register-delta-format` — live at
 `${CLAUDE_PLUGIN_ROOT}/skills/plugin-plan/formats/<name>-format.md`.
 
 **Initial request:** $ARGUMENTS
@@ -115,10 +116,11 @@ decision that is hard to reverse, surprising without context, or a real trade-of
 
 ### 1.2.2 Compose register deltas
 
-One `D-###` delta per captured decision, Y-statement form, rules-with-rationale: new law takes
-the next ID; superseding law **rewrites its entry in place**, supersession noted in *Since:*;
-dead law is deleted. Present each delta verbatim — law lands in the target's `.standard` Rules
-register, never a side log, never an append-only file.
+One `D-###` delta per captured decision, shaped per `register-delta-format` (the Y-statement
+and its fields live there): new law takes the next ID; superseding law **rewrites its entry in
+place**, supersession noted in *Since:*; dead law is deleted. Present each delta verbatim —
+law lands in the target's `.standard` Rules register, never a side log, never an append-only
+file.
 
 ### 1.2.3 Compose scenarios, RED-first
 

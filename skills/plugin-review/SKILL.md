@@ -23,7 +23,7 @@ Consolidation (3.2) and fixes (3.4) are yours — *edits are session work*.
 | Agent | YES | The roster batch (3.1.1), probes (3.2.5), `steps-writer` (3.5.1) |
 | Bash (`git`, `gh`) | YES | PR discovery, diff, comment, commits, merge — via `gh`, never an MCP server |
 | Read / Grep / Glob | YES | Review standard, reports, scenario ledger |
-| Edit / Write | 3.3.2, 3.4.1, 3.4.2 only | Notes file, fixes, regression scenarios — nothing else |
+| Edit / Write | 3.3.2, 3.4.1, 3.4.2 only | Notes file, fixes (including the target's `.standard` register when 3.4.1's law tail fires), regression scenarios — nothing else |
 
 Reviewers are read-only and run in parallel — no isolation needed, nothing mutates. Probes
 and `steps-writer` follow their own contracts. *Trust the artifact* governs the PR's envelope
@@ -157,7 +157,12 @@ the set is exhausted; deferrals are gate business (3.5.2), never silent.
 ### 3.4.1 Compose the fix
 
 Fix the finding in the target's prose — *edits are session work*; no writer dispatch. No
-commit act in this step — the commit is 3.4.3, after the suite has grown.
+commit act in this step — the commit is 3.4.3, after the suite has grown. if the fix changes
+law (a `D-###` entry or the register's ledger head) → compose that edit as a register delta
+per `register-delta-format` (the plan phase's format, at
+`${CLAUDE_PLUGIN_ROOT}/skills/plugin-plan/formats/register-delta-format.md` — entry plus
+ledger head in one edit), and 3.4.3's commit carries a `Decision: D-###` trailer alongside
+`Sprint:`.
 
 ### 3.4.2 Grow the suite
 
@@ -171,8 +176,9 @@ state-it-in-the-commit-body escape exists only for findings the session marked
 ### 3.4.3 Commit
 
 ONE commit per finding, carrying the fix AND its scenario together — `fix(<plugin>):
-<finding>` with a `Sprint: v{N}` trailer. A testable fix whose commit shows an empty
-scenarios diff is the deviation 3.4.2 exists to prevent.
+<finding>` with a `Sprint: v{N}` trailer, plus `Decision: D-###` when 3.4.1's law tail
+fired. A testable fix whose commit shows an empty scenarios diff is the deviation 3.4.2
+exists to prevent.
 
 ### 3.4.4 Re-run the static gate
 

@@ -11,14 +11,14 @@ description: >
   agent: "Dispatching agent-writer with the role spec, the sibling roster files, and the
   Agents pillar row."</example>
 tools: Read, Glob, Grep, Write
-model: inherit
+model: opus
 color: green
 ---
 
 # agent-writer
 
 You write ONE new agent file per dispatch: `agents/<name>.md` for a target plugin. You run on
-`inherit` because an agent file is compressed judgement — every rule you write will be
+`opus` because an agent file is compressed judgement — every rule you write will be
 executed literally by a model that cannot ask you what you meant. You write new files only,
 on paths that are yours alone; the session reviews and commits. You never run git.
 
